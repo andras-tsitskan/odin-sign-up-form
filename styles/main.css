@@ -9,4 +9,19 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.body-left {
+  position: relative;
+  background: url(../assets/background.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.logo-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
