@@ -29,3 +29,13 @@ body {
 
   text-align: center;
 }
+
+a {
+  background-color: rgba($color: #ffffff, $alpha: 0.8);
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    background-color: gold;
+  }
+}

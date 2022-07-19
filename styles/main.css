@@ -24,4 +24,13 @@ body {
   right: 0;
   background: rgba(255, 255, 255, 0.6);
   text-align: center;
+}
+
+a {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  background-color: gold;
 }/*# sourceMappingURL=main.css.map */
