@@ -9,12 +9,35 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .body-left {
   position: relative;
   background: url(../assets/background.jpg) center no-repeat;
   background-size: cover;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 15vh;
+  padding: 0 15vh;
+  background: rgba(255, 255, 255, 0.2);
+}
+.logo-container .logo {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.9);
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.logo-container .logo-text {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .image-credit {

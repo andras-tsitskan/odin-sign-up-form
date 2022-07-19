@@ -10,6 +10,8 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
+
+  background: rgba($color: #000000, $alpha: 0.1);
 }
 
 .body-left {
@@ -17,6 +19,32 @@ body {
 
   background: url(../assets/background.jpg) center no-repeat;
   background-size: cover;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-top: 15vh;
+  padding: 0 15vh;
+
+  background: rgba($color: #ffffff, $alpha: 0.2);
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    fill: none;
+    stroke: rgba($color: #000000, $alpha: 0.9);
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .logo-text {
+    font-size: 30px;
+    color: rgba($color: #000000, $alpha: 0.9);
+  }
 }
 
 .image-credit {
