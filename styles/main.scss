@@ -60,14 +60,18 @@ body {
   font-size: 0.7rem;
 }
 
+.body-right {
+  position: relative;
+}
+
 .hero,
 .action {
-  padding: 30px;
+  padding: 40px;
 }
 
 form {
   background: white;
-  padding: 30px;
+  padding: 40px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
   ul {
@@ -128,4 +132,9 @@ button {
   &:focus {
     background-color: gold;
   }
+}
+
+footer {
+  @extend .image-credit;
+  background: white;
 }

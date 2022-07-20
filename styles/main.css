@@ -37,7 +37,7 @@ body {
   font-size: 3rem;
 }
 
-.image-credit {
+.image-credit, footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -47,14 +47,18 @@ body {
   font-size: 0.7rem;
 }
 
+.body-right {
+  position: relative;
+}
+
 .hero,
 .action {
-  padding: 30px;
+  padding: 40px;
 }
 
 form {
   background: white;
-  padding: 30px;
+  padding: 40px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 form ul {
@@ -103,4 +107,8 @@ button {
 }
 button:hover, button:focus {
   background-color: gold;
+}
+
+footer {
+  background: white;
 }/*# sourceMappingURL=main.css.map */
