@@ -5,6 +5,10 @@ $background-text-container: rgba(
   $alpha: 0.8,
 );
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -57,13 +61,20 @@ body {
   font-size: 0.7rem;
 }
 
+.hero,
+.action {
+  padding: 30px;
+}
+
 form {
-  background: $background-text-container;
+  background: white;
+  padding: 30px;
 
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding: 0;
 
     list-style: none;
   }
@@ -79,6 +90,25 @@ form {
 
   input {
     width: 350px;
+
+    &:focus {
+      outline: none;
+      border-color: rgb(39, 76, 223);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    &.error {
+      outline: none;
+      border: 2px solid red;
+    }
+  }
+
+  .requirements {
+    visibility: hidden;
+    margin-top: 4px;
+
+    font-size: 14px;
+    color: red;
   }
 }
 
@@ -86,6 +116,16 @@ a {
   color: black;
 
   &:hover {
+    background-color: gold;
+  }
+}
+
+button {
+  background-color: white;
+  padding: 10px 20px;
+
+  &:hover,
+  &:focus {
     background-color: gold;
   }
 }
