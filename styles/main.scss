@@ -53,11 +53,10 @@ body {
   background: $background-body-left;
 
   text-align: center;
+  font-size: 0.7rem;
 }
 
 a {
-  background-color: rgba($color: #ffffff, $alpha: 0.8);
-  text-decoration: none;
   color: black;
 
   &:hover {
