@@ -43,6 +43,26 @@ body {
   font-size: 0.7rem;
 }
 
+form {
+  background: rgba(255, 255, 255, 0.8);
+}
+form ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  list-style: none;
+}
+form li {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-bottom: 0.2rem;
+}
+form input {
+  width: 350px;
+}
+
 a {
   color: black;
 }

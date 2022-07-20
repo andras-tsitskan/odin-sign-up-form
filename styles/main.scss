@@ -57,6 +57,31 @@ body {
   font-size: 0.7rem;
 }
 
+form {
+  background: $background-text-container;
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 0.2rem;
+  }
+
+  input {
+    width: 350px;
+  }
+}
+
 a {
   color: black;
 
