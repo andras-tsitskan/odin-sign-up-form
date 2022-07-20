@@ -32,26 +32,27 @@
       </div>
       <form action="" method="get">
         <h1>>_ Form</h1>
+        <p>All the fields are mandatory to fill. This is not a not-joke.</p>
         <ul>
           <li>
             <label for="first-name">not your first name</label
-            ><input type="text" name="first-name" id="first-name" />
+            ><input type="text" name="first-name" id="first-name" required />
           </li>
           <li>
             <label for="last-name">not your last name</label
-            ><input type="text" name="last-name" id="last-name" />
+            ><input type="text" name="last-name" id="last-name" required />
           </li>
           <li>
             <label for="email">not your email</label
-            ><input type="email" name="email" id="email" />
+            ><input type="email" name="email" id="email" required />
           </li>
           <li>
             <label for="phone">not your phone number</label
-            ><input type="tel" name="phone" id="phone" />
+            ><input type="tel" name="phone" id="phone" required />
           </li>
           <li>
             <label for="password">certainly not your password</label
-            ><input type="password" name="password" id="password" />
+            ><input type="password" name="password" id="password" required />
           </li>
           <li>
             <label for="confirm-password">confirm not your password</label
@@ -59,6 +60,7 @@
               type="password"
               name="confirm-password"
               id="confirm-password"
+              required
             />
           </li>
         </ul>
