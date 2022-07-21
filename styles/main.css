@@ -27,8 +27,8 @@ body {
   justify-content: flex-end;
   align-items: center;
   height: 100px;
-  margin-top: 15vh;
-  padding-right: 15vh;
+  margin-top: 100px;
+  padding-right: 100px;
   background: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.9);
@@ -49,11 +49,16 @@ body {
 
 .body-right {
   position: relative;
+  display: grid;
+  grid-template-rows: 200px auto 200px;
 }
 
 .hero,
 .action {
-  padding: 40px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 form {
@@ -87,7 +92,7 @@ form input.error {
   outline: none;
   border: 2px solid red;
 }
-form .requirements {
+form .error-confirm-password {
   visibility: hidden;
   margin-top: 4px;
   font-size: 14px;
@@ -104,6 +109,9 @@ a:hover {
 button {
   background-color: white;
   padding: 10px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 button:hover, button:focus {
   background-color: gold;

@@ -4,6 +4,7 @@ $background-text-container: rgba(
   $color: #ffffff,
   $alpha: 0.8,
 );
+$height: 200px;
 
 * {
   box-sizing: border-box;
@@ -34,9 +35,9 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100px;
-  margin-top: 15vh;
-  padding-right: 15vh;
+  height: calc($height / 2);
+  margin-top: calc($height / 2);
+  padding-right: calc($height / 2);
 
   background: $background-text-container;
 
@@ -62,11 +63,16 @@ body {
 
 .body-right {
   position: relative;
+  display: grid;
+  grid-template-rows: $height auto $height;
 }
 
 .hero,
 .action {
-  padding: 40px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 form {
@@ -107,7 +113,7 @@ form {
     }
   }
 
-  .requirements {
+  .error-confirm-password {
     visibility: hidden;
     margin-top: 4px;
 
@@ -127,6 +133,7 @@ a {
 button {
   background-color: white;
   padding: 10px 20px;
+  width: fit-content;
 
   &:hover,
   &:focus {
